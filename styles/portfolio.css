@@ -1,0 +1,12 @@
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+}
+h1 {
+  color: black;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+.bg-warning {
+  background-color: #ffc107 !important;
+}
