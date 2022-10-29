@@ -28,7 +28,7 @@ h4 {
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 80px 20px;
 }
 .hero p {
   font-size: 36px;
@@ -151,7 +151,7 @@ footer .contact-box {
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 60px 20px;
 }
 .content p {
   font-size: 14px;
