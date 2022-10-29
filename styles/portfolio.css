@@ -6,7 +6,7 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 body {
-  margin: 80px 0;
+  font-family: var(--default-font-family);
 }
 p {
   font-family: var(--default-font-family);
@@ -22,51 +22,26 @@ h6 {
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
+h4 {
+  font-size: 48px;
+}
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
-  padding: 90px 0 40px;
+  padding: 160px 20px;
 }
 .hero p {
   font-size: 36px;
   margin: 0;
   color: #272142;
+  font-weight: bold;
 }
 
 .hero h2 {
-  font-family: var(--default-font-family);
+  font-family: var(--heading-font-family);
   font-weight: normal;
+  line-height: 1.5;
   font-size: 24px;
-  line-height: 1.4;
-}
-
-.navigation-links {
-  display: flex;
-  margin-top: 40px;
-  justify-content: center;
-}
-
-.navigation-links a {
-  margin: 20px;
-}
-
-.primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: var(--branding-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-}
-
-.secondary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  color: var(--branding-color);
-  border: 1px solid var(--branding-color);
 }
 
 h1 {
@@ -99,6 +74,36 @@ h2 {
   padding: 120px 60px;
 }
 
+footer .email-links {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+footer .email-links:hover {
+  color: var(--branding-color);
+}
+footer {
+  margin: 60px 0;
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--branding-color);
+}
+footer .contact-box {
+  background-color: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
 @media (max-width: 960px) {
   h1 {
     font-size: 44px;
@@ -107,6 +112,10 @@ h2 {
   h2 {
     font-size: 44px;
   }
+  h4 {
+    font-size: 26px;
+  }
+
   .hero {
     padding: 80px 20px 40px;
   }
@@ -142,7 +151,10 @@ h2 {
 }
 
 .content-container {
-  padding: 90px 0 40px;
+  padding: 160px 20px;
+}
+.content p {
+  font-size: 14px;
 }
 .content {
   margin: 30px;
@@ -152,4 +164,33 @@ h2 {
   font-family: var(--default-font-family);
   line-height: 1.5;
   margin: 20px 0 0;
+}
+
+.logo {
+  max-height: 40px;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  padding: 20px 0;
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+  font-size: 16px;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
 }
