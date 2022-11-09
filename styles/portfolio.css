@@ -194,3 +194,12 @@ nav a:hover,
 nav li.active a {
   color: var(--branding-color);
 }
+
+.work-link {
+  text-decoration: none;
+  color: #272142;
+}
+
+.work-link:hover {
+  color: var(--branding-color);
+}
